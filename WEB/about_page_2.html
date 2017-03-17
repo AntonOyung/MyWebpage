@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Projects_page_2.html</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2{font-family: "Courier", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+  <body>
+      <!-- Sidenav -->
+    <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px" id="mySidenav">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-display-topright" style="padding:6px 24px">
+        <i class="fa fa-remove"></i>
+      </a>
+      <a href="Homepage.html" class="w3-text-grey w3-hover-black">Home</a>
+      <a href="Photos.html" class="w3-text-grey w3-hover-black">Photos</a>
+      <a href="Projects.html" class="w3-text-grey w3-hover-black">Projects</a>
+      <a href="Designs.html" class="w3-text-grey w3-hover-black">Designs</a>
+
+    </nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="w3-content" style="max-width:2000px margin-left:150px margin-right:150px">
+
+    <!-- Header -->
+    <header>
+      <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <h1>About me</h1>
+    </header>
+
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h2>SUSA Web Dev Committee</h2>
+        <p>As a part of the Statistics Undergraduate Student Association (SUSA) Web development committee, my team has been tasked with developing our clubs website. We
+        provide resources like practice midterms, course suggestions, and other academic tools for our fellow stats majors!</p>
+        <p>Our current task is creating an interactive course map that will allow students to input the courses they've taken and receive a list of courses they still
+        need to take. </p>
+        <p>This is what some of our code looks like.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <img class="yelp-pic" src="webpics/SUSA_web.png"></img>
+        <img class="yelp-pic" src=""></img>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-small" style="margin-bottom:150px">
+      <div class="w3-bar">
+        <a class="w3-button w3-hover-black" href="about.html">1</a>
+        <a class="w3-button w3-black" href="about_page_2.html">2</a>
+        <a class="w3-button w3-hover-black" href="#">3</a>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:22em">
+      <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+      <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+      <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
+    </footer>`
+
+  <!-- END MAIN -->
+  </div>
+
+  <script>
+
+  // Open and close sidenav
+  function w3_open() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("mySidenav").style.display = "block";
+  }
+
+  function w3_close() {
+      document.getElementById("mySidenav").style.display = "none";
+  }
+  </script>
+
+  </body>
+
+</html>
