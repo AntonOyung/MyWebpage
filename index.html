@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="W3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="libs.js">
 <style>
 body,h1 {font-family: "Courier", sans-serif}
 img {margin-bottom: -7px}
@@ -19,18 +20,30 @@ img {margin-bottom: -7px}
 <!-- Header -->
 <header class="w3-container w3-padding-32 w3-center w3-opacity w3-margin-bottom">
   <div class="w3-clear"></div>
-  <h1><b>anton.oyung</b></h1>
+  <h1><b class="name" value=1 id="name">anton.oyung</b></h1>
   <p><b>UC Berkeley '19</b></p>
 </header>
+
+<!-- <p class="w3-padding-8 w3-center"><button class="w3-btn" onclick="text_expand()">contact</button></p> -->
 
 <body>
   <div class= "links">
     <a class= "photo" href="Photos.html">Photos</a>
     <a class= "projects" href="Projects.html">Projects</a>
     <a class= "design" href="Designs.html">Designs</a>
+    <a class= "resume" href="Resume.pdf">Resume</a>
     <a class= "about" href="About.html">About</a>
   </div>
 </body>
+
+<p class="w3-padding-32 w3-left w3-top">
+  <p>TO do:</p>
+  <p>Add contact info animation</p>
+  <p>Make designs page</p>
+  <p>Fix github link issue</p>
+  <p>when you hover graphics related to the link pop up on page from each side </p>
+</p>
+
 
 <!-- End Page Content -->
 </div>
@@ -53,6 +66,41 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
 }
+
+// //Text toggle Version 1
+// function text_expand() {
+//     var x = document.getElementById("name")
+//     if (x.text === "anton.oyung") {
+//       x.content = "anton.oyung@berkeley.edu";
+//     } else {
+//       x.content = "anton.oyung";
+//     }
+// }
+
+// //Text toggle Version 2
+// function text_expand(vari) {
+//   if (document.getElementById("name").content == "anton.oyung@berkeley.edu") {
+//     document.getElementById("name").remove();
+//   } else {
+//     document.getElementById("name").className += ' expand';
+//     document.getElementById("name").append("@berkeley.edu");
+//   }
+// }
+
+// //Text toggle Version 3
+// function text_expand(vari) {
+//   if (document.getElementById("name").value == 1) {
+//     //document.getElementById("name").remove();
+//     document.getElementById("name").content = "hihi";
+//     document.getElementById("name").value = 0;
+//   } else {
+//     document.getElementById("name").append("heheheh");
+//     document.getElementById("name").value = 1;
+//   }
+// }
+
+
+
 </script>
 
 </body>

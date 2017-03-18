@@ -2,7 +2,7 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="W3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -10,7 +10,7 @@ body,h1 {font-family: "Courier", sans-serif}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-  `<body>
+  <body>
 
     <!-- Sidenav -->
   <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px" id="mySidenav">
@@ -31,7 +31,7 @@ img {margin-bottom: -7px}
   <header>
     <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <h1>Portfolio</h1>
-    <p class="w3-padding-16 w3-center"><button class="w3-btn" onclick="myFunction()">Space</button></p>
+    <p class="w3-padding-16 w3-center"><button class="w3-button" id="button" onclick="myFunction(); toggle();">Space</button></p>
   </header>
 
   <p class ="w3-center"> Photos taken from vacations, concerts, games, and various day-trips. </p>
@@ -69,6 +69,7 @@ img {margin-bottom: -7px}
 
   <script>
   // Toggle grid padding
+
   function myFunction() {
       var x = document.getElementById("myGrid");
       if (x.className === "w3-row") {
@@ -85,6 +86,15 @@ img {margin-bottom: -7px}
 
   function w3_close() {
       document.getElementById("mySidenav").style.display = "none";
+  }
+
+  function toggle() {
+    var button = document.getElementById("button").style.background;
+    if (button=== "grey") {
+      document.getElementById("button").style.background = "pink";
+    } else {
+      document.getElementById("button").style.background = "grey";
+    }
   }
   </script>
 
