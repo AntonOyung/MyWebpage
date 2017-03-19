@@ -370,45 +370,26 @@ a:link {
   text-decoration: none;
 }
 
-.photo:link {
-  text-decoration: none;
-}
+.photo {transition:all 0.3s ease;}
+.photo:link {text-decoration: none;}
+.photo:hover {background-color: #b6f9b6;}
 
-.photo:hover {
-  background-color: #b6f9b6;
-}
+.projects {transition:all 0.3s ease;}
+.projects:link {text-decoration: none;}
+.projects:hover {background-color: pink;}
 
-.projects:link {
-  text-decoration: none;
-}
+.design {transition:all 0.3s ease;}
+.design:link {text-decoration: none;}
+.design:hover {background-color: #bbc2ea;}
 
-.projects:hover {
-  background-color: pink;
-}
+.about {transition:all 0.3s ease;}
+.about:link {text-decoration: none;}
+.about:hover {background-color: #ffebae;}
 
-.design:link {
-  text-decoration: none;
-}
+.resume {transition:all 0.3s ease;}
+.resume:link {text-decoration: none;}
+.resume:hover {background-color: #8fe8fd;}
 
-.design:hover {
-  background-color: #bbc2ea;
-}
-
-.about:link {
-  text-decoration: none;
-}
-
-.about:hover {
-  background-color: #ffebae;
-}
-
-.resume:link {
-  text-decoration: none;
-}
-
-.resume:hover {
-  background-color: #8fe8fd;
-}
 .name {
 
 }
