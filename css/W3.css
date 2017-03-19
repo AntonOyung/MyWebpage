@@ -421,6 +421,14 @@ a:link {
   /*margin-left: 100px;*/
 }
 
+.logo-pic {
+  max-width:150px;
+  max-height:150px;
+  width:auto;
+  height:auto;
+
+}
+
 .expand {
   display: inline-block;
   background-color: antiquewhite;
