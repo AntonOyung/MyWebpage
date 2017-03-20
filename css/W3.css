@@ -390,10 +390,6 @@ a:link {
 .resume:link {text-decoration: none;}
 .resume:hover {background-color: #8fe8fd;}
 
-.name {
-
-}
-
 .yelp-pic {
   max-width:350px;
   max-height:350px;
@@ -411,9 +407,44 @@ a:link {
 }
 
 .expand {
+    display: inline-block;
+}
+.expand-active {
   display: inline-block;
-  background-color: antiquewhite;
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+ 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	-moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0;}
+                                      40%{opacity:.6;}
+                                      100%{opacity:1;}
+                                    }
+@keyframes tracking-in-expand {0%{letter-spacing:-.5em;opacity:0;}
+                              40%{opacity:.6;}
+                              100%{opacity:1;}
+                            }
+
+/*.my-button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.my-button:hover {background-color: #3e8e41}
+
+.my-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}*/
