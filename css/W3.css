@@ -447,6 +447,17 @@ a:link {
   padding: 1rem;
 }
 
+@keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .fade-in {
+      will-change: opacity;
+      animation: fade-in 2s both;
+
+
+
 .whatever-class{
 animation: fade-in 2s both;
 }
