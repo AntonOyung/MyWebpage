@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html>
-<title>index.html</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/W3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="libs.js">
-<style>
-body,h1 {font-family: "Courier", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
+  <title>index.html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/W3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs.js">
+  <style>
 
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-<body class = "whatever-class">
+    .fade-in {
+      will-change: opacity;
+      animation: fade-in 2s both;
+    }
 
-  <!-- <script>document.body.className += 'body-fade-out';</script> -->
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+    body,h1 {font-family: "Courier", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+  </style>
 
-<!-- Header -->
-<header class="w3-container w3-padding-16 w3-center w3-opacity w3-margin-bottom" style="margin-top:150px">
-  <div class="w3-clear"></div>
-  <h1><b class="expand" id="anton">anton.oyung</b></h1>
-  <p><b>UC Berkeley '19</b></p>
-</header>
+  <body class="fade-in">
 
-<p class="w3-padding-bottom w3-center"><button class="w3-btn" id ="button" onclick = "text_expand()">contact me</button></p>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
 
-<body>
-  <div class= "links">
-    <a class= "photo" href="Photos.html">Photos</a>
-    <a class= "projects" href="Projects.html">Projects</a>
-    <a class= "design" href="Designs.html">Designs</a>
-    <a class= "resume" href="Resume.pdf">Resume</a>
-    <a class= "about" href="about.html">About</a>
-  </div>
-</body>
+      <!-- Header -->
+      <header class="w3-container w3-padding-16 w3-center w3-opacity w3-margin-bottom" style="margin-top:150px">
+        <div class="w3-clear"></div>
+        <h1><b class="expand" id="anton">anton.oyung</b></h1>
+        <p><b>UC Berkeley '19</b></p>
+      </header>
 
+      <p class="w3-padding-bottom w3-center"><button class="w3-btn" id ="button" onclick = "text_expand()">contact me</button></p>
 
-<!-- <p class="w3-padding-32 w3-left w3-top">
-  <p>TO do:</p>
-  <p>Add contact info animation</p>
-  <p>Make designs page</p>
-  <p>when you hover graphics related to the link pop up on page from each side </p>
-  <p>Add more animations</p>
-</p> -->
+      <body>
+        <div class= "links">
+          <a class= "photo" href="Photos.html">Photos</a>
+          <a class= "projects" href="Projects.html">Projects</a>
+          <a class= "design" href="Designs.html">Designs</a>
+          <a class= "resume" href="Resume.pdf">Resume</a>
+          <a class= "about" href="about.html">About</a>
+        </div>
+      </body>
 
+      <!-- <p class="w3-padding-32 w3-left w3-top">
+        <p>TO do:</p>
+        <p>Add contact info animation</p>
+        <p>Make designs page</p>
+        <p>when you hover graphics related to the link pop up on page from each side </p>
+        <p>Add more animations</p>
+      </p> -->
 
-<!-- End Page Content -->
-</div>
+      <!-- End Page Content -->
+    </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge myFooter" style="margin-top:3em">
-  <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
-  <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
-  <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
-</footer>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      wow.init();
-    });
-    var wow = new WOW({
-      animateClass: 'fade-in'
-    });
-</script>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge myFooter" style="margin-top:3em">
+      <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+      <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+      <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
+    </footer>
+  </body>
+</html>
 
 <script>
 
 // Open and close sidenav
 function w3_open() {
-    document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("mySidenav").style.display = "block";
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.display = "block";
 }
 
 function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
+  document.getElementById("mySidenav").style.display = "none";
 }
 
 //Text toggle Version 1
 function text_expand() {
-    var x = document.getElementById("anton");
-    if (x.getAttribute("class") == "expand") {
-      anton.innerHTML = "anton.oyung@berkeley.edu";
-      x.setAttribute("class", "expand-active");
-    } else if (x.getAttribute("class") == "expand-active") {
-      x.setAttribute("class", "shrink-active");
-      anton.innerHTML = "anton.oyung";
+  var x = document.getElementById("anton");
+  if (x.getAttribute("class") == "expand") {
+    anton.innerHTML = "anton.oyung@berkeley.edu";
+    x.setAttribute("class", "expand-active");
+  } else if (x.getAttribute("class") == "expand-active") {
+    x.setAttribute("class", "shrink-active");
+    anton.innerHTML = "anton.oyung";
 
-    } else if (x.getAttribute("class") == "shrink-active") {
-      anton.innerHTML = "anton.oyung@berkeley.edu";
-      x.setAttribute("class", "expand-active");
-    }
+  } else if (x.getAttribute("class") == "shrink-active") {
+    anton.innerHTML = "anton.oyung@berkeley.edu";
+    x.setAttribute("class", "expand-active");
+  }
 }
 
 </script>
-
-</body>
-</html>
