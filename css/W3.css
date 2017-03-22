@@ -448,16 +448,52 @@ a:link {
 }
 
 @keyframes fade-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+  from { opacity: 0;}
+  to { opacity: 1; }
+}
 
-    .fade-in {
-      will-change: opacity;
-      animation: fade-in 2s both;
+.fade-in {
+  will-change: opacity;
+  animation: fade-in 3s both;
+}
+
+.fade-in-fast {
+  will-change: opacity;
+  animation: fade-in 1.5s both;
+}
+
+@-webkit-keyframes scale-in-center{0
+        %{-webkit-transform:scale(0);transform:scale(0);opacity:1}
+        100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+    @keyframes scale-in-center{
+        0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}
+        100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+.button-grow {
+	-webkit-animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.button-grow-fast {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 
+  @keyframes bg-pan{
+      from {
+        background-position:100% 50%;
+        background-color: white;}
+      to {background-position:0 50%;
+        background-image: "./webpics/NightBackground.png";
+        background-color: #2c3e50;
+        }
+      }
 
-.whatever-class{
-animation: fade-in 2s both;
+.pan-up {
+	-webkit-animation: bg-pan 8s both;
+	-moz-animation: bg-pan 8s both;
+	animation: bg-pan 8s both;
 }
