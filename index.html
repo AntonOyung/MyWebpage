@@ -12,19 +12,23 @@ body,h1 {font-family: "Courier", sans-serif}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-<body>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<body class = "whatever-class">
+
+  <!-- <script>document.body.className += 'body-fade-out';</script> -->
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
-<header class="w3-container w3-padding-32 w3-center w3-opacity w3-margin-bottom">
+<header class="w3-container w3-padding-16 w3-center w3-opacity w3-margin-bottom" style="margin-top:150px">
   <div class="w3-clear"></div>
   <h1><b class="expand" id="anton">anton.oyung</b></h1>
   <p><b>UC Berkeley '19</b></p>
 </header>
 
-<!-- <p class="w3-padding-8 w3-center"><button class="w3-btn" id ="button">contact</button></p> -->
+<p class="w3-padding-bottom w3-center"><button class="w3-btn" id ="button" onclick = "text_expand()">contact me</button></p>
 
 <body>
   <div class= "links">
@@ -36,23 +40,34 @@ img {margin-bottom: -7px}
   </div>
 </body>
 
-<p class="w3-padding-32 w3-left w3-top">
+
+<!-- <p class="w3-padding-32 w3-left w3-top">
   <p>TO do:</p>
   <p>Add contact info animation</p>
   <p>Make designs page</p>
   <p>when you hover graphics related to the link pop up on page from each side </p>
-</p>
+  <p>Add more animations</p>
+</p> -->
 
 
 <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:22em">
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge myFooter" style="margin-top:3em">
   <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
   <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
   <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      wow.init();
+    });
+    var wow = new WOW({
+      animateClass: 'fade-in'
+    });
+</script>
 
 <script>
 
@@ -66,39 +81,21 @@ function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
 }
 
-// //Text toggle Version 1
-// function text_expand() {
-//     var x = document.getElementById("name")
-//     if (x.text === "anton.oyung") {
-//       x.content = "anton.oyung@berkeley.edu";
-//     } else {
-//       x.content = "anton.oyung";
-//     }
-// }
+//Text toggle Version 1
+function text_expand() {
+    var x = document.getElementById("anton");
+    if (x.getAttribute("class") == "expand") {
+      anton.innerHTML = "anton.oyung@berkeley.edu";
+      x.setAttribute("class", "expand-active");
+    } else if (x.getAttribute("class") == "expand-active") {
+      x.setAttribute("class", "shrink-active");
+      anton.innerHTML = "anton.oyung";
 
-//Text toggle Version 2
-// function text_expand(vari) {
-//   if (document.getElementById("name").content == "anton.oyung@berkeley.edu") {
-//     document.getElementById("name").remove();
-//   } else {
-//     document.getElementById("name").className += ' expand';
-//     document.getElementById("name").append("@berkeley.edu");
-//   }
-// }
-
-// //Text toggle Version 3
-// function text_expand(vari) {
-//   if (document.getElementById("name").value == 1) {
-//     //document.getElementById("name").remove();
-//     document.getElementById("name").content = "hihi";
-//     document.getElementById("name").value = 0;
-//   } else {
-//     document.getElementById("name").append("heheheh");
-//     document.getElementById("name").value = 1;
-//   }
-// }
-
-
+    } else if (x.getAttribute("class") == "shrink-active") {
+      anton.innerHTML = "anton.oyung@berkeley.edu";
+      x.setAttribute("class", "expand-active");
+    }
+}
 
 </script>
 
