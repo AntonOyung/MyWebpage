@@ -3,15 +3,123 @@
 <title>Designs.html</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="css/W3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 <style>
-html,body,h1,h2{font-family: "Courier", sans-serif}
+html,body,h2{font-family: "Karla", sans-serif}
+h1 {font-family: "Karla", sans-serif; font-weight:700;}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-<body class="w3-padding-64 w3-center">
-  <p>This page is</p>
-  <p>Under construction</p>
+
+  <!-- Sidenav -->
+  <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px;top:0px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-text-grey w3-hover-black">Home</a>
+  <a href="Photos.html" class="w3-text-grey w3-hover-black">Photos</a>
+  <a href="Projects.html" class="w3-text-grey w3-hover-black">Projects</a>
+  <a href="About.html" class="w3-text-grey w3-hover-black">About</a>
+  </nav>
+
+
+
+<body  style="">
+  <header style="margin-left:10%; margin-right:10%">
+    <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1>Designs</h1>
+  </header>
+  <main style="margin-left:30%;margin-right:30%;">
+    <h2><b class="w3-center">How to: Changing Themes</b></h2>
+    <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+    <p>A brief explanation of how I implemented the various themes on the title page and how you can do it too.</p>
+    <img src="webpics/Mist_Screenshot.png" style="max-width:350; max-height:350px"></img>
+    <ul><b>What you'll use:</b>
+      <li>Adobe Illustrator</li>
+      <li>Key Frames</li>
+      <li>Reference Images (or just your imagination)</li>
+      <li>Color Palettes</li>
+    </ul>
+    <h3><b>Step One: Choosing a Color Palette</b></h3>
+    <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+      <p>The first and probably most important step is choosing the theme and color palette. If you don't know where
+        to start but have a color in mind, you can use this <b><a href="http://paletton.com/">color scheme generator.</a></b>
+      </p>
+      <p>This is the palette I made for the mist theme.</p>
+      <img src="webpics/Mist_Colors.png"></img>
+    <h3><b>Step Two: Making your Designs</b></h3>
+    <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+      <p>The next step is coming up with your design. I'll briefly go over how to make the graphics in Illustrator but if you
+        have an image to use already, feel free to skip to the next step.
+      </p>
+      <h4><b>Step One A: Background Gradient</b></h4>
+      <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+        <p>Open Illustrator and create a nice big new file. The dimensions I used were 2048 x 1536 pixels.</p>
+        <ol>
+          <li>Press (M) or select the rectangle tool and create a rectangle to fill your whole image.</li>
+          <li>Double-click the gradient tool and click on your gradient. Select the right slider and set the colors to RGB.
+            <img src="webpics/Gradient_Screenshot.png" style="max-width:400px;max-height:400px; margin-bottom:10px; margin-top:10px;"></img></li>
+          <li>Change the colors of the selectors using your color palette to create the gradient you want. Feel free to drag the
+            sliders or click anywhere on the bar to add more sliders. Once you've made a gradient you like, close the window then
+            rotate and move the gradient into position. Feel free to add any effects or styling. In this I used a watercolor
+            brush on very low opacity to give a subtle misty/cloud feeling to my gradient.
+              <img src="webpics/Mist_Gradient.png" style="max-width:400px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img></li>
+          <li>Export the file as a png into wherever you're storing your pictures for your site. Make sure to uncheck "Use Artboard".</li>
+        </ol>
+      <h4><b>Step One B: Image</b></h4>
+      <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+        <p>Next is creating your graphic. Create a new file of the same dimensions as your gradient. Feel free to do this in any
+          way you'd like. Illustrator is a great tool to create vector images and there are tons of tutorials online you can use
+          to make anything you can imagine. </p>
+        <p>For my graphics I used the <a href="https://helpx.adobe.com/illustrator/using/drawing-pen-pencil-or-flare.html"><b>Pen Tool</b></a>
+           to draw the hills and the <a href="https://helpx.adobe.com/illustrator/using/building-new-shapes-using-shape.html"><b>Shape Builder Tool</b></a>
+           to fill in the colors using your color palette. Make sure to export when you're finished. </p>
+        <img src="webpics/Hills.png" style="max-width:400px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img>
+    <h3><b>Step Three: The Code</b></h3>
+    <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+      <h4><b>CSS</b></h4>
+      <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+        <p>You can make your own keyframes to change how the image will animate over time. To animate the background fade-in I did:</p>
+          <img src="webpics/Keyframes.png" style="max-width:400px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img>
+        <p>There are tons of buttons you can find online that are great to use. To make my buttons I did:</p>
+          <img src="webpics/CSS_Button.png" style="max-width:400px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img>
+      <h4><b>HTML</b></h4>
+      <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+        <p>Place the images as the first line of your body tag in a div block and set the z-index to -1 and -2 in order to stack the images properly.
+        Add your animations by adding the class you created and set the display of the div block to none like this:</p>
+          <img src="webpics/Mist_html.png" style="max-width:600px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img>
+        <p>Add your buttons and place them where you'd like. Add an onclick function call to the function we will write:</p>
+          <img src="webpics/Button.png" style="max-width:600px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img>
+      <h4><b>JS</b></h4>
+      <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+        <p>I wrote a function in Javascript to hide and reveal the background like this:</p>
+          <img src="webpics/JS.png" style="max-width:400px;max-height:400px;margin-bottom:10px; margin-top:10px;"></img>
+    <h3><b>You're Done!</b></h3>
+    <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+      <p>Congratulations! You now have themed pages. By adding more buttons and designing more graphics, you can have more to select from as well. I
+        hope you enjoyed this tutorial and learned something new. If you end up adding your own themes to your website or you just found this tutorial
+        interesting, let me know! I'd love some feedback or suggestions as to what I can improve!
+  </main>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:5%">
+    <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+    <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+    <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
+  </footer>
 </body>
+
+<script>
+// Open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
 </html>

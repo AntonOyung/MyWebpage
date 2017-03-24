@@ -7,56 +7,55 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="libs.js">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
   <style>
-    body,h1 {font-family: "Courier", sans-serif}
+    body {font-family: "Karla", sans-serif}
+    h1 {font-family: "Karla", sans-serif; font-weight:700;}
     img {margin-bottom: -7px}
     .w3-row-padding img {margin-bottom: 12px}
   </style>
 
   <body class="fade-in ">
+    <!-- Theme Buttons -->
     <div class="btn-light" style="left:15px; top:30px; position:fixed;" onclick="change_light()"></div>
     <div class="btn" style="left:15px; top:50px; position:fixed;" onclick="change_dark()"></div>
     <div class="btn-mist" style="left:15px; top:70px; position:fixed;" onclick="change_mist()"></div>
+
+    <!-- Night Theme -->
     <div id="background-night" style="display:none;">
       <img class="fade-in" src="webpics/NightBackground.png" style="position:absolute; width:100%; height:100%; top:0px; bottom:0px; z-index:-2;"></img>
       <img class="bounce-in-top" src="webpics/Mountains.png" style="position:fixed; width:100%; height:100%; bottom:-250px; z-index:-1;"></img>
     </div>
+    <!-- Mist Theme -->
     <div id="background-mist" style="display:none;" >
       <img class="fade-in" src="webpics/MistBackground.png" style="position:absolute; width:100%; height:100%; top:0px; bottom:0px; z-index:-2;"></img>
       <img class="bounce-in-top" src="webpics/Hills.png" style="position:fixed; width:100%; height:100%; z-index:-1;"></img>
     </div>
+
     <!-- !PAGE CONTENT! -->
     <div class="w3-content" style="max-width:1500px">
 
       <!-- Header -->
       <header class="w3-container w3-padding-16 w3-center w3-opacity w3-margin-bottom" style="margin-top:150px">
         <div class="w3-clear"></div>
-        <h1 class = "button-grow"><b class="expand" id="anton">anton.oyung</b></h1>
+        <h1 class="button-grow"><b class="expand" id="anton">anton.oyung</b></h1>
         <p><b>UC Berkeley '19</b></p>
       </header>
 
-      <p class="w3-padding-bottom w3-center"><button class="w3-btn" id ="button" onclick = "text_expand()">contact me</button></p>
+      <p class="w3-padding-bottom w3-center"><button class="w3-btn" style="background-color:#323232" id ="button" onclick = "text_expand()">contact me</button></p>
 
 
-      <div class= "links">
-        <a class= "photo" href="Photos.html">Photos</a>
-        <a class= "projects" href="Projects.html">Projects</a>
-        <a class= "design" href="Designs.html">Designs</a>
-        <a class= "resume" href="Resume.pdf">Resume</a>
-        <a class= "about" href="about.html">About</a>
+      <div class="links">
+        <b>
+          <a class="photo" href="Photos.html">Photos</a>
+          <a class="projects" href="Projects.html">Projects</a>
+          <a class="design" href="Designs.html">Designs</a>
+          <a class="resume" href="Resume.pdf">Resume</a>
+          <a class="about" href="about.html">About</a>
+        </b>
       </div>
 
-
-
-      <!-- <p class="w3-padding-32 w3-left w3-top">
-        <p>TO do:</p>
-        <p>Add contact info animation</p>
-        <p>Make designs page</p>
-        <p>when you hover graphics related to the link pop up on page from each side </p>
-        <p>Add more animations</p>
-      </p> -->
-
-      <!-- End Page Content -->
+    <!-- End Page Content -->
     </div>
 
     <!-- Footer -->
@@ -81,20 +80,21 @@ function w3_close() {
   document.getElementById("mySidenav").style.display = "none";
 }
 
+// Change Dark Theme
 function change_dark() {
   var x = document.getElementById("background-night");
   var y = document.getElementById("background-mist");
   x.setAttribute("style", "display");
   y.setAttribute("style", "display:none");
 }
-
+// Change Light Theme
 function change_light() {
   var x = document.getElementById("background-night");
   var y = document.getElementById("background-mist");
   x.setAttribute("style", "display:none");
   y.setAttribute("style", "display:none");
 }
-
+// Change Mist Theme
 function change_mist() {
   var x = document.getElementById("background-night");
   var y = document.getElementById("background-mist");
@@ -102,9 +102,7 @@ function change_mist() {
   y.setAttribute("style", "display");
 }
 
-
-
-//Text toggle Version 1
+//Text toggle
 function text_expand() {
   var x = document.getElementById("anton");
   if (x.getAttribute("class") == "expand") {
@@ -119,7 +117,7 @@ function text_expand() {
     x.setAttribute("class", "expand-active");
   }
 }
-
+  // Google analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
