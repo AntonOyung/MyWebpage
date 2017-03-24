@@ -16,9 +16,14 @@
   <body class="fade-in ">
     <div class="btn-light" style="left:15px; top:30px; position:fixed;" onclick="change_light()"></div>
     <div class="btn" style="left:15px; top:50px; position:fixed;" onclick="change_dark()"></div>
+    <div class="btn-mist" style="left:15px; top:70px; position:fixed;" onclick="change_mist()"></div>
     <div id="background-night" style="display:none;">
       <img class="fade-in" src="webpics/NightBackground.png" style="position:absolute; width:100%; height:100%; top:0px; bottom:0px; z-index:-2;"></img>
       <img class="bounce-in-top" src="webpics/Mountains.png" style="position:fixed; width:100%; height:100%; bottom:-250px; z-index:-1;"></img>
+    </div>
+    <div id="background-mist" style="display:none;" >
+      <img class="fade-in" src="webpics/MistBackground.png" style="position:absolute; width:100%; height:100%; top:0px; bottom:0px; z-index:-2;"></img>
+      <img class="bounce-in-top" src="webpics/Hills.png" style="position:fixed; width:100%; height:100%; z-index:-1;"></img>
     </div>
     <!-- !PAGE CONTENT! -->
     <div class="w3-content" style="max-width:1500px">
@@ -76,13 +81,25 @@ function w3_close() {
 
 function change_dark() {
   var x = document.getElementById("background-night");
+  var y = document.getElementById("background-mist");
   x.setAttribute("style", "display");
+  y.setAttribute("style", "display:none");
 }
 
 function change_light() {
   var x = document.getElementById("background-night");
+  var y = document.getElementById("background-mist");
   x.setAttribute("style", "display:none");
+  y.setAttribute("style", "display:none");
 }
+
+function change_mist() {
+  var x = document.getElementById("background-night");
+  var y = document.getElementById("background-mist");
+  x.setAttribute("style", "display:none");
+  y.setAttribute("style", "display");
+}
+
 
 
 //Text toggle Version 1

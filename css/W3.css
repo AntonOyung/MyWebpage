@@ -530,7 +530,7 @@ a:link {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    border: 2px solid #7f8c8d;
+    border: 2px solid #3d7baa;
   position:absolute;
   z-index:1;
 }
@@ -560,7 +560,27 @@ a:link {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    border: 2px solid #444949;
+    border: 2px solid #4a4c56;
+  position:absolute;
+  z-index:1;
+}
+
+.btn-mist {
+  display:block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #48b1bc;
+  position:absolute;
+  z-index:1;
+}
+
+.btn-mist:hover {
+  display:block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #4a4c56;
   position:absolute;
   z-index:1;
 }
