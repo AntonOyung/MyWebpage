@@ -536,6 +536,7 @@ a:link {
 }
 
 .btn:hover {
+  cursor: pointer;
   display:block;
     height: 15px;
     width: 15px;
@@ -556,6 +557,7 @@ a:link {
 }
 
 .btn-light:hover {
+  cursor: pointer;
   display:block;
     height: 15px;
     width: 15px;
@@ -576,6 +578,7 @@ a:link {
 }
 
 .btn-mist:hover {
+  cursor: pointer;
   display:block;
     height: 15px;
     width: 15px;
