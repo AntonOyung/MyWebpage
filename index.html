@@ -18,8 +18,13 @@
   <body class="fade-in ">
     <!-- Theme Buttons -->
     <div class="btn-light" style="left:15px; top:30px; position:fixed;" onclick="change_light()"></div>
+    <p style="left:37px; top:11px; position:fixed;"></p>
     <div class="btn" style="left:15px; top:50px; position:fixed;" onclick="change_dark()"></div>
+    <p style="left:37px; top:31px; position:fixed;">Night</p>
     <div class="btn-mist" style="left:15px; top:70px; position:fixed;" onclick="change_mist()"></div>
+    <p style="left:37px; top:51px; position:fixed;">Mist</p>
+    <div class="btn" style="left:15px; top:90px; position:fixed; border:2px solid pink;" onclick="change_skyline()"></div>
+    <p style="left:37px; top:71px; position:fixed;">Skyline</p>
 
     <!-- Night Theme -->
     <div id="background-night" style="display:none;">
@@ -30,6 +35,11 @@
     <div id="background-mist" style="display:none;" >
       <img class="fade-in" src="webpics/MistBackground.png" style="position:absolute; width:100%; height:100%; top:0px; bottom:0px; z-index:-2;"></img>
       <img class="bounce-in-top" src="webpics/Hills.png" style="position:fixed; width:100%; height:100%; z-index:-1;"></img>
+    </div>
+    <!-- Skyline Theme -->
+    <div id="background-skyline" style="display:none;" >
+      <img class="fade-in" src="webpics/Skyline-background.png" style="position:absolute; width:100%; height:100%; top:0px; bottom:0px; z-index:-2;"></img>
+      <img class="bounce-in-top" src="webpics/Skyline.png" style="position:fixed; width:100%; height:100%; z-index:-1;"></img>
     </div>
 
     <!-- !PAGE CONTENT! -->
@@ -84,22 +94,37 @@ function w3_close() {
 function change_dark() {
   var x = document.getElementById("background-night");
   var y = document.getElementById("background-mist");
+  var z = document.getElementById("background-skyline");
   x.setAttribute("style", "display");
   y.setAttribute("style", "display:none");
+  z.setAttribute("style", "display:none");
 }
 // Change Light Theme
 function change_light() {
   var x = document.getElementById("background-night");
   var y = document.getElementById("background-mist");
+  var z = document.getElementById("background-skyline");
   x.setAttribute("style", "display:none");
   y.setAttribute("style", "display:none");
+  z.setAttribute("style", "display:none");
 }
 // Change Mist Theme
 function change_mist() {
   var x = document.getElementById("background-night");
   var y = document.getElementById("background-mist");
+  var z = document.getElementById("background-skyline");
   x.setAttribute("style", "display:none");
   y.setAttribute("style", "display");
+  z.setAttribute("style", "display:none");
+}
+// Change Skyline Theme
+function change_skyline() {
+  var x = document.getElementById("background-night");
+  var y = document.getElementById("background-mist");
+  var z = document.getElementById("background-skyline");
+  x.setAttribute("style", "display:none");
+  y.setAttribute("style", "display:none");
+  z.setAttribute("style", "display");
 }
 
 //Text toggle
