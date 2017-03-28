@@ -587,3 +587,24 @@ a:link {
   position:absolute;
   z-index:1;
 }
+
+.btn-skyline {
+  display:block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid pink;
+  position:absolute;
+  z-index:1;
+}
+
+.btn-skyline:hover {
+  cursor: pointer;
+  display:block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #4a4c56;
+  position:absolute;
+  z-index:1;
+}
