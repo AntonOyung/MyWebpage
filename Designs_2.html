@@ -1,6 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <main>
-    <p>Datafest</p>
+<title>Designs_2</title>
+<head>
+  <link rel='icon' type='image/png' href='webpics/LogoSmall.png'></link>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/W3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+<style>
+html,body,h2{font-family: "Karla", sans-serif}
+h1 {font-family: "Karla", sans-serif; font-weight:700;}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+  <!-- Sidenav -->
+  <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px;top:0px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-text-grey w3-hover-black">Home</a>
+  <a href="Photos.html" class="w3-text-grey w3-hover-black">Photos</a>
+  <a href="Projects.html" class="w3-text-grey w3-hover-black">Projects</a>
+  <a href="about.html" class="w3-text-grey w3-hover-black">About</a>
+  </nav>
+
+
+
+<body>
+  <header style="margin-left:10%; margin-right:10%">
+    <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1>Designs</h1>
+  </header>
+  <main style="margin-left:30%;margin-right:30%;">
+    <h2><b class="w3-center">Datafest: Infographic</b></h2>
+    <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
+    <p>On April 2017 a group of my friends attended the Berkeley Institute of Data Science's annual Datafest. The 3-day event
+    hosted by graduate students was an opportunity to take the dataset that was given to us and see what we could come up with.
+    After analyzing the data, we created this infographic with our findings which won us the Best Visualization award.</p>
+    <div class="w3-center">
+      <img src="webpics/datafest.png" style="max-width:400; max-height:1000px"></img>
+      <p>Designs by Anton</p>
+    </div>
+    <p>Our code is accessible on <a href="https://github.com/AntonOyung/Datafest"><b>github</b></a>.</p>
+    <p>Me and my group after a weekend of fun!
+      <img src="webpics/Raj.JPG" style="max-width:350; max-height:350px"></img>
+    </p>
+
+    <div class="w3-center">
+      <strong><a class="projects" href=Designs.html>Prev</a> | <a class="design" href=Projects.html>Projects</a></strong>
+    </div>
   </main>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:5%">
+    <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+    <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+    <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
+  </footer>
+</body>
+
+<script>
+// Open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
 </html>

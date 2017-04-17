@@ -686,3 +686,19 @@ a:link {
 .mybutt:hover {
   background-color: grey;
 }
+
+.hover-green:hover{
+  color:#fff!important;background-color:#b6f9b6!important
+}
+
+.hover-pink:hover{
+  color:#fff!important;background-color: pink!important
+}
+
+.hover-blue:hover{
+  color:#fff!important;background-color:#bbc2ea!important
+}
+
+.hover-cyan:hover{
+  color:#fff!important;background-color:#8fe8fd!important
+}
