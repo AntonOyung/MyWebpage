@@ -702,3 +702,7 @@ a:link {
 .hover-cyan:hover{
   color:#fff!important;background-color:#8fe8fd!important
 }
+
+.opacity-pic:hover{
+  opacity: .5;
+}

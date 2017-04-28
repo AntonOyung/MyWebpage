@@ -17,9 +17,9 @@ img {margin-bottom: -7px}
 </style>
   <head>
     <!-- Dropdown button  -->
-    <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <span class="w3-opennav w3-xxlarge w3-right " onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <!-- Sidenav -->
-    <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px;top:0px;" id="mySidenav">
+    <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px;top:0px;right:0px;" id="mySidenav">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-display-topright" style="padding:6px 24px">
       <i class="fa fa-remove"></i>
     </a>
@@ -31,64 +31,64 @@ img {margin-bottom: -7px}
   </head>
 
 
-  <body>
+  <body style="margin-left:15%;margin-right:15%;">
   <!-- PAGE CONTENT -->
-  <div class="w3-content" style="max-width:1400px; margin-top:20px;">
+    <div class="w3-content" style="max-width:1400px; margin-top:20px;">
 
-    <!-- Header -->
-    <header>
-      <h1>Projects</h1>
-    </header>
+      <!-- Header -->
+      <header>
+        <h1>Projects</h1>
+      </header>
 
+      <main>
+        <div class="w3-row w3-padding-64" style="margin-top:50px;">
+          <div class="w3-twothird w3-container">
+            <h2><b>Yelp</b></h2>
+            <p>This Spring semester I've been working on a NLP project analyzing Yelp's academic dataset, a free dataset released by Yelp for their yearly data competition.
+            My partner <a href="https://andrew-peng.com">Andrew</a> and I are utilizing LDA (Latent Dirichlet Allocation), an information retrieval algorithm, to provide recommendations on what dishes to order at a given restaurant.
+            We do this by analyzing word frequencies and commonly used phrases to parse text reviews.</p>
+            <p>Code: <a href="https://github.com/AntonOyung/YelpDataset">YelpDataset Repo</a></p>
+          </div>
 
-    <div class="w3-row w3-padding-64" style="margin-top:50px;">
-      <div class="w3-twothird w3-container">
-        <h2><b>Yelp</b></h2>
-        <p>This Spring semester I've been working on a NLP project analyzing Yelp's academic dataset, a free dataset released by Yelp for their yearly data competition.
-        My partner <a href="https://andrew-peng.com">Andrew</a> and I are utilizing LDA (Latent Dirichlet Allocation), an information retrieval algorithm, to provide recommendations on what dishes to order at a given restaurant.
-        We do this by analyzing word frequencies and commonly used phrases to parse text reviews.</p>
-        <p>Code: <a href="https://github.com/AntonOyung/YelpDataset">YelpDataset Repo</a></p>
-      </div>
+          <div class="w3-third w3-padding-32 w3-container">
+            <img class="yelp-pic" src="webpics/YelpResult.png"></img>
+            <img class="yelp-pic" src="webpics/YelpCode.png"></img>
+          </div>
 
-      <div class="w3-third w3-padding-32 w3-container">
-        <img class="yelp-pic" src="webpics/YelpResult.png"></img>
-        <img class="yelp-pic" src="webpics/YelpCode.png"></img>
-      </div>
+          <div class="w3-center">
+            <h3 class = "w3-left-align"><b style="margin-left:18px;">Tools Used:</b></h3>
+            <img class="logo-pic w3-padding-16 " src="webpics/Python_logo.png"></img>
+            <img class="logo-pic w3-padding-16" src="webpics/nlp.jpeg"></img>
+          </div>
 
-      <div class="w3-center">
-        <h3 class = "w3-left-align"><b style="margin-left:18px;">Tools Used:</b></h3>
-        <img class="logo-pic w3-padding-16 " src="webpics/Python_logo.png"></img>
-        <img class="logo-pic w3-padding-16" src="webpics/nlp.jpeg"></img>
-      </div>
+          <div class="w3-container">
 
-      <div class="w3-container">
+          </div>
 
-      </div>
+        </div>
 
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-small" style="margin-bottom:15px; margin-top:10%">
+          <div class="w3-bar">
+            <a class="w3-button w3-black" href="Projects.html">1</a>
+            <a class="w3-button hover-cyan" href="Projects_page_2.html">2</a>
+            <a class="w3-button hover-green" href="Projects_page_3.html">3</a>
+            <a class="w3-button hover-blue" href="Projects_page_4.html">4</a>
+          </div>
+        </div>
+      <!-- END MAIN -->
+      </main>
     </div>
-
-    <!-- Pagination -->
-    <div class="w3-center w3-padding-small" style="margin-bottom:15px; margin-top:10%">
-      <div class="w3-bar">
-        <a class="w3-button w3-black" href="Projects.html">1</a>
-        <a class="w3-button hover-cyan" href="Projects_page_2.html">2</a>
-        <a class="w3-button hover-green" href="Projects_page_3.html">3</a>
-        <a class="w3-button hover-blue" href="Projects_page_4.html">4</a>
-      </div>
-    </div>
-    <!-- END MAIN -->
-    </div>
-
+  </body>
     <!-- Footer -->
-    <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge">
-      <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
-      <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
-      <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
-    </footer>
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge" >
+    <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+    <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+    <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
+  </footer>
 
 
   <script>
-
   // Open and close sidenav
   function w3_open() {
       document.getElementById("mySidenav").style.width = "100%";
@@ -99,7 +99,5 @@ img {margin-bottom: -7px}
       document.getElementById("mySidenav").style.display = "none";
   }
   </script>
-
-  </body>
 
 </html>
