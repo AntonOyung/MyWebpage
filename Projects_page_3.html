@@ -15,84 +15,24 @@ h1 {font-family: "Karla", sans-serif; font-weight:700;}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-
-  <head>
-    <!-- Dropdown button  -->
-    <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <!-- Sidenav -->
-    <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px;top:0px;right:0px;" id="mySidenav">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-display-topright" style="padding:6px 24px">
-      <i class="fa fa-remove"></i>
-    </a>
-    <a href="index.html" class="w3-text-grey w3-hover-black">Home</a>
-    <a href="Photos.html" class="w3-text-grey w3-hover-black">Photos</a>
-    <a href="Designs.html" class="w3-text-grey w3-hover-black">Designs</a>
-    <a href="about.html" class="w3-text-grey w3-hover-black">About</a>
-    </nav>
-  </head>
-
-  <body  style="margin-left:15%;margin-right:15%;">
-  <!-- PAGE CONTENT -->
-  <div class="w3-content" style="max-width:1400px; margin-top:20px;">
-
-    <!-- Header -->
-    <header>
-      <h1>Projects</h1>
-    </header>
-
-    <div class="w3-row w3-padding-64" style="margin-top:50px;">
-      <div class="w3-twothird w3-container">
-        <h2><b>SUSA Web Dev Committee</b></h2>
-        <p>As a part of the Statistics Undergraduate Student Association (SUSA) Web development committee, my team has been tasked with developing our clubs website. We
-        provide resources like practice midterms, course suggestions, and other academic tools for our fellow stats majors!</p>
-        <p>Our current task is creating an interactive course map that will allow students to input the courses they've taken and receive a list of courses they still
-        need to take. </p>
-        <p>This is what some of our code looks like.</p>
-      </div>
-      <div class="w3-third w3-container">
-        <img class="yelp-pic" src="webpics/SUSA_web.png"></img>
-      </div>
-    </div>
+<header class= "nav-bar">
+    <a href="about.html" class="w3-text-black nav-bar-item">About</a>
+    <a href="Designs.html" class="w3-text-black  nav-bar-item">Designs</a>
+    <a href="Photos.html" class="w3-text-black  nav-bar-item">Photos</a>
+    <a href="index.html" class="w3-text-black  nav-bar-item">Home</a>
+</header>
+<main>
+  <body style="margin-left:10%;margin-right:10%;">
+    <h2 class="w3-center"><b>Yelp</b></h2>
+    <p>As a part of the Statistics Undergraduate Student Association (SUSA) Web development committee, my team was tasked with developing our club's website. We
+    provide resources like practice midterms, course suggestions, and other academic tools for our fellow stats majors!</p>
+    <p>Our task was creating an interactive course map that will allow students to input the courses they've taken and receive a list of courses they still
+    need to take. </p>
     <div class="w3-center">
       <h3 class="w3-left-align" style="margin-left:18px"><b>Tools Used:</b></h3>
       <img class="logo-pic w3-padding-16 w3-centered" src="webpics/html.png"></img>
       <img class="logo-pic w3-padding-16 w3-centered" src="webpics/css.png"></img>
     </div>
-
-    <!-- Pagination -->
-    <div class="w3-center w3-padding-small" style="margin-bottom:15px; margin-top:10%">
-      <div class="w3-bar">
-        <a class="w3-button hover-pink" href="Projects.html">1</a>
-        <a class="w3-button hover-cyan" href="Projects_page_2.html">2</a>
-        <a class="w3-button w3-black" href="Projects_page_3.html">3</a>
-        <a class="w3-button hover-blue" href="Projects_page_4.html">4</a>
-      </div>
-    </div>
-    <!-- END MAIN -->
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge">
-      <a href = "https://www.instagram.com/antonoyung/" title = "Instagram"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
-      <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
-      <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
-    </footer>
-
-
-
-  <script>
-
-  // Open and close sidenav
-  function w3_open() {
-      document.getElementById("mySidenav").style.width = "100%";
-      document.getElementById("mySidenav").style.display = "block";
-  }
-
-  function w3_close() {
-      document.getElementById("mySidenav").style.display = "none";
-  }
-  </script>
-
   </body>
-
+</main>
 </html>
