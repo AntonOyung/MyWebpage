@@ -15,27 +15,17 @@ h1 {font-family: "Karla", sans-serif; font-weight:700;}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-
-  <!-- Sidenav -->
-  <nav class="w3-sidenav w3-black w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:150px;top:0px;" id="mySidenav">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="index.html" class="w3-text-grey w3-hover-black">Home</a>
-  <a href="Photos.html" class="w3-text-grey w3-hover-black">Photos</a>
-  <a href="Projects.html" class="w3-text-grey w3-hover-black">Projects</a>
-  <a href="about.html" class="w3-text-grey w3-hover-black">About</a>
-  </nav>
-
-
+<header class= "nav-bar">
+    <a href="about.html" class="w3-text-black nav-bar-item">About</a>
+    <a href="Projects.html" class="w3-text-black  nav-bar-item">Projects</a>
+    <a href="Photos.html" class="w3-text-black  nav-bar-item">Photos</a>
+    <a href="index.html" class="w3-text-black  nav-bar-item">Home</a>
+</header>
+<hr class="w3-center" style="border-top:1px solid #aeaeaf;"></hr>
 
 <body>
-  <header style="margin-left:10%; margin-right:10%">
-    <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1>Designs</h1>
-  </header>
   <main style="margin-left:30%;margin-right:30%;">
-    <h2><b class="w3-center">Datafest: Infographic</b></h2>
+    <h3><b class="w3-center">Datafest: Infographic</b></h3>
     <hr class="w3-center" style="border-top:2px solid #29272D;"></hr>
     <p>On April 2017 a group of my friends attended the Berkeley Institute of Data Science's annual Datafest. The 3-day event
     hosted by graduate students was an opportunity to take the dataset that was given to us and see what we could come up with.
@@ -48,12 +38,11 @@ img {margin-bottom: -7px}
     <p>Me and my group after a weekend of fun!
       <img src="webpics/Raj.JPG" style="max-width:350; max-height:350px"></img>
     </p>
-
     <div class="w3-center">
-      <strong><a class="projects" href=Designs.html>Prev</a> | <a class="design" href=Projects.html>Projects</a></strong>
+      <p><a class="projects" href=Designs.html>Back</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a class="design" href=Projects.html>Projects</a></p>
     </div>
   </main>
-
+</body>
 
 
   <!-- Footer -->
@@ -62,18 +51,5 @@ img {margin-bottom: -7px}
     <a href = "https://www.linkedin.com/in/anton-oyung/" title = "LinkedIn"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
     <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
   </footer>
-</body>
-
-<script>
-// Open and close sidenav
-function w3_open() {
-    document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("mySidenav").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-}
-</script>
 
 </html>
