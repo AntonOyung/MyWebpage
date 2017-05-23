@@ -526,7 +526,7 @@ a:link {
 	animation: bounce-in-top 1.1s both;
 }
 
-.btn {
+.btn-night {
   display:block;
     height: 15px;
     width: 15px;
@@ -536,7 +536,7 @@ a:link {
   z-index:1;
 }
 
-.btn:hover {
+.btn-night:hover {
   cursor: pointer;
   display:block;
     height: 15px;
