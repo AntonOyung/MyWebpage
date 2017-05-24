@@ -11,20 +11,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <style>
 body {font-family: "Karla", sans-serif}
 h1 {font-family: "Karla", sans-serif; font-weight:700;}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
+#appear_image_div{width:100%; height:100%; position:fixed;; z-index:10; opacity:0.7; background:#ededed;}
+#appear_image{display:block; max-width:700px; max-height:700px; margin:auto; position:relative; z-index:11; top:auto;}
+
 </style>
 </head>
-
-<!-- <header class= "nav-bar">
-    <a href="About.html" class="w3-text-black  nav-bar-item">About</a>
-    <a href="Projects.html" class="w3-text-black nav-bar-item">Projects</a>
-    <a href="Designs.html" class="w3-text-black  nav-bar-item">Designs</a>
-    <a href="index.html" class="w3-text-black  nav-bar-item">Home</a>
-</header> -->
 
 <body>
   <nav class="navbar">
@@ -116,7 +113,24 @@ img {margin-bottom: -7px}
       }
     }
   </script>
+  <script type="text/javascript">
+    jQuery(function($) {
+      $('img').click(function(){
+        var img = $(this).attr("src");
+        var appear_image_div = "<div id='appear_image_div' onClick='closeImage()'></div>";
+        var appear_image = "<img id='appear_image' src='"+img+"' />";
+        $('body').prepend(appear_image_div);
+        $('hr').append(appear_image);
+      });
+    });
+    function closeImage() {
+      $('#appear_image_div').remove();
+      $('#appear_image').remove();
+    }
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
   </body>
 </html>
