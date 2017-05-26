@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="css/W3.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/W3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
@@ -18,7 +18,6 @@ img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
 </head>
-
 
 <body>
   <nav class="navbar">
@@ -41,37 +40,47 @@ img {margin-bottom: -7px}
   </nav>
   <hr class="w3-center" style="border-top:1px solid #aeaeaf;"></hr>
   <main style="margin-left:10%;margin-right:10%;">
-    <h2 class="w3-center"><b>Binwise Inc.</b></h2>
-    <p>My 2016 summer I worked as a statistical programmer intern at a small SF-based company called Binwise.
-     Binwise, a wine inventory tracking B2B company, deals with the sales data from top restaurants all across the nation.
-     During my time at Binwise I was purposed with the task of analyzing the sales data. I taught myself to use tools such
-     as SQL Server Management Studio and Rstudio and utilized Python in order to produce revenue generating business
-     intelligence reports and model sales data. Working at Binwise was an excellent opportunity for me to get work experience
-     in a real dev environment and the intimate corporate atmosphere allowed me to interact closely with everyone on the
-     dev team.</p>
-     <div class="w3-center w3-padding-32 w3-container">
-       <img class="yelp-pic" src="webpics/binwise-logo.png"></img>
-     </div>
-    <h3><b>What they had to say:</b></h3>
-    <p>"Anton is the most capable intern I ever had the pleasure to manage.
-       His defining qualities that made the internship such a success are his
-       intelligence, steadfastness, willingness to learn and great attitude
-       all around. He far exceeded all expectations and demonstrated that he
-       can work in a production environment having only completed his freshman
-       year. He was able, in a matter of months, to spearhead an analytics initiative
-       that is currently becoming a revenue-generating product. I would recommend
-       Anton to anyone without any reservation."</p>
-    <p>   -Konstantinos Liolios</p>
-    <p>    Director of Engineering at BinWise Inc.</p>
+    <h2 class="w3-center"><b>Yelp</b></h2>
+    <p><b>Spring 2017.</b> I worked on a NLP project analyzing Yelp's academic dataset, a free dataset released by Yelp for their yearly data competition.
+    My partner <a href="https://andrew-peng.com">Andrew</a> and I utilized LDA (Latent Dirichlet Allocation), an information retrieval algorithm, to generate a comprehensive overview of the
+    customers' thoughts about a given restaurant. </p>
+    <p>See our code: <b><a href="https://github.com/AntonOyung/YelpDataset">YelpDataset Repo</a></b></p>
+    <p>See our full report: <b><a href="Yelp_Poster.pdf">Yelp Poster</a></b></p>
+    <div class="w3-padding-32 w3-center">
+      <img class="w3-padding-16 " src="webpics/LDA_Diagrams.svg"></img>
+    </div>
+    <p><b>How We Did It.</b> LDA is an NLP tool that analyzes text data and outputs a set of unobserved topics (groups of words) that are used frequently together and often. In essence, they are
+      key words that are used often in the text. Taking these topics over all of the reviews for one restaurant, we used tf-idf (term frequency-inverse document frequency) to rank all the reviews
+      by their relevance in relation to the topics. Finally using LexRank we were able to draw the most significant sentences and compile them to create one comprehensive review.
+    </p>
+    <div class="w3-padding-32 w3-center">
+      <img class="w3-padding-16 " src="webpics/Ranking_Diagrams.svg"></img>
+    </div>
+    <p><b>Our Results.</b>
+    We split the reviews into good and bad in order to give the reader a more comprehensive review of both the good and the bad aspects of the restaurant. Our results for one restaurant looks
+      like this.</p>
+    <p>
+      <i>
+      The Good:
+      “For me, the number one draw was the View not the view of the Paris Hotel & Casino, but the view from the outdoor patio of the
+      Bellagio Fountains across the Las Vegas Strip. There are two dining options at Mon Ami Gabi: Indoor or Patio. We were in no rush
+      to leave thanks to the Fountains of Bellagio view and relaxed pace of our meal.”
+      </i>
+    </p>
+    <p>
+      <i>
+      The Bad: “A food runner brought water and bread fairly quickly. Our server made an appearance about 10 minutes after we were seated. 
+      I thought maybe the food would make up for the lack of good customer service here, but it didn't. We were here no later than 10:55 and
+      I called ahead of time but the fact that I had to wait in that ridiculous line to check in so I was 30 minutes “late”.”
+      </i>
+    </p>
+    <p><i>-Restaurant: Mon Ami Gabi $$ - French, Steakhouse, Breakfast & Brunch</i></p>
     <div class="w3-container w3-center">
-      <h3 class = "w3-left-align"><b style="margin-left:18px;">Tools Used:</b></h3>
-      <img class="logo-pic w3-padding-8 w3-center" src="webpics/Rstudio.png"></img>
-      <img class="logo-pic w3-padding-8 w3-center" src="webpics/sql.png"></img>
-      <img class="logo-pic w3-padding-8 w3-center" src="webpics/Python_logo.png"></img>
-      <img class="logo-pic w3-padding-8 w3-center" src="webpics/jira_logo.jpg"></img>
+      <img class="logo-pic w3-padding-16 " src="webpics/Python_logo.png"></img>
+      <img class="logo-pic w3-padding-16" src="webpics/nlp.jpeg"></img>
     </div>
     <div class="w3-center">
-      <p><a class="projects" href=Projects.html>Back</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a class="design" href=About.html>About</a></p>
+      <p><a class="projects" href=Projects.html>Back</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a class="design" href=Projects_page_3.html>Next</a></p>
     </div>
   </main>
   <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge"  style="margin-top:5%">
@@ -80,6 +89,6 @@ img {margin-bottom: -7px}
     <a href = "https://github.com/AntonOyung/" title = "Github"><i class="fa fa-github w3-hover-text-cyan"></i></a>
   </footer>
 </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </html>
